@@ -15,6 +15,11 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from http.client import RemoteDisconnected
 from urllib.request import URLError
 
+from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+from reportlab.lib.units import cm
+
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../lib/utils")
 from conf import Conf
 from log import Log
@@ -227,7 +232,7 @@ class PhantomJS_(webdriver.PhantomJS):
 		return True
 
 
-	def save_error_messages_at(self, method, command, warning_messages, exception,  url=""):
+	def save_error_messages_at(self, method, command, warning_messages, exception,	url=""):
 		self.log.debug("caught " + exception.__class__.__name__ + " at " + method + ". url[" + url + "]")
 		self.log.debug("command: " + command)
 		if warning_messages:
@@ -282,6 +287,38 @@ class PhantomJS_(webdriver.PhantomJS):
 			self.log.error(__class__.__name__ + "." + sys._getframe().f_code.co_name)
 			self.log.error("TYPEERROR suffix[" + suffix + "]")
 		self.log.debug("saved to " + filename)
+		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished")
+
+	def convert_png_to_pdf(self, filename):
+		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start")
+		self.log.debug("filename: " + filename)
+
+		pdfFile = canvas.Canvas('./python.pdf')
+		pdfFile.saveState()
+
+		pdfFile.setAuthor('python-izm.com')
+		pdfFile.setTitle('PDF生成')
+		pdfFile.setSubject('サンプル')
+
+		# A4
+		pdfFile.setPageSize((21.0*cm, 29.7*cm))
+		# B5
+		# pdfFile.setPageSize((18.2*cm, 25.7*cm))
+
+		pdfFile.setFillColorRGB(0, 0, 100)
+		pdfFile.rect(2*cm, 2*cm, 6*cm, 6*cm, stroke=1, fill=1)
+		pdfFile.setFillColorRGB(0, 0, 0)
+
+		pdfFile.setLineWidth(1)
+		pdfFile.line(10*cm, 20*cm, 10*cm, 10*cm)
+
+		pdfmetrics.registerFont(UnicodeCIDFont('HeiseiKakuGo-W5'))
+		pdfFile.setFont('HeiseiKakuGo-W5', 12)
+		pdfFile.drawString(5*cm, 25*cm, 'あいうえおー')
+
+		pdfFile.restoreState()
+		pdfFile.save()
+
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished")
 
 	def by_or_tag_is_invalid(self, by, tag):

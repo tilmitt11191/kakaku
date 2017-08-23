@@ -5779,3 +5779,348 @@ Screenshot: available via screen
 2017-08-23 21:43:13,412 - DEBUG - num of vendor: 0
 2017-08-23 21:43:13,412 - DEBUG - num of button: 0
 2017-08-23 21:43:13,412 - ERROR - num of vendor == 0. Please retry!
+2017-08-23 21:44:04,499 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140298369621688]
+2017-08-23 21:44:04,510 - DEBUG - Kakaku.create_driver start
+2017-08-23 21:44:04,514 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:44:04,551 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:44:05,597 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 21:44:05,605 - DEBUG - Kakaku.__init__ start
+2017-08-23 21:44:05,605 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 21:44:05,605 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 21:44:05,605 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 21:44:05,605 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 21:44:05,605 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 21:44:11,501 - DEBUG - caught TimeoutException at get. url[http://kakaku.com/]
+2017-08-23 21:44:11,501 - DEBUG - command: by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:44:11,502 - WARNING - caught TimeoutException at get. url[http://kakaku.com/]
+2017-08-23 21:44:11,502 - WARNING - command: by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:44:11,502 - WARNING - save_current_page to ../../var/ss/TimeoutExceptionhttpkakakucom.html and png
+2017-08-23 21:44:11,502 - WARNING - Message: {"errorMessage":"URL 'http://kakaku.com/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"82","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:57949","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/\", \"sessionId\": \"bfb4e390-8800-11e7-90f1-dfefd20b20db\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/bfb4e390-8800-11e7-90f1-dfefd20b20db/url"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/media/sf_f/program/kakaku/src/scraping/../../lib/scraping/phantomjs_.py", line 74, in get
+    super().get(url)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 264, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in execute
+    self.error_handler.check_response(response)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: {"errorMessage":"URL 'http://kakaku.com/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"82","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:57949","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/\", \"sessionId\": \"bfb4e390-8800-11e7-90f1-dfefd20b20db\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/bfb4e390-8800-11e7-90f1-dfefd20b20db/url"}}
+Screenshot: available via screen
+
+2017-08-23 21:44:11,507 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:44:11,516 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucom], suffix[.html]
+2017-08-23 21:44:11,561 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucom.html
+2017-08-23 21:44:11,562 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:44:11,562 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:44:11,573 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucom], suffix[.png]
+2017-08-23 21:44:12,487 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucom.png
+2017-08-23 21:44:12,487 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:44:12,487 - DEBUG - return False
+2017-08-23 21:44:12,507 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 21:44:14,840 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:44:14,840 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 21:44:14,840 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:14,840 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:44:14,840 - DEBUG - valid. return True
+2017-08-23 21:44:14,859 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 21:44:14,859 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 21:44:14,859 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 21:44:14,859 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 21:44:14,860 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:14,860 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:44:14,860 - DEBUG - valid. return True
+2017-08-23 21:44:14,869 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 21:44:14,992 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 21:44:14,992 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 21:44:14,992 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:14,992 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 21:44:14,992 - DEBUG - valid. return True
+2017-08-23 21:44:15,004 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 21:44:15,004 - DEBUG - PhantomJS_.click start.
+2017-08-23 21:44:16,666 - DEBUG - PhantomJS_.click finished.
+2017-08-23 21:44:16,667 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:44:16,667 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 21:44:16,667 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:16,667 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 21:44:16,668 - DEBUG - valid. return True
+2017-08-23 21:44:16,708 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 21:44:16,709 - DEBUG - PhantomJS_.click start.
+2017-08-23 21:44:20,747 - DEBUG - PhantomJS_.click finished.
+2017-08-23 21:44:20,747 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 21:44:20,747 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:20,747 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:44:20,747 - DEBUG - valid. return True
+2017-08-23 21:44:20,765 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 21:44:20,766 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:44:20,766 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 21:44:20,766 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:20,766 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:44:20,766 - DEBUG - valid. return True
+2017-08-23 21:44:20,782 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 21:44:20,782 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:44:20,783 - DEBUG - by: XPATH , + tag: //tr/td/a
+2017-08-23 21:44:20,783 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:44:20,783 - DEBUG - by[XPATH], tag[//tr/td/a]
+2017-08-23 21:44:20,783 - DEBUG - valid. return True
+2017-08-23 21:44:20,802 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[76]
+2017-08-23 21:44:22,168 - DEBUG - num of vendor: 17
+2017-08-23 21:44:22,169 - DEBUG - num of button: 17
+2017-08-23 21:44:22,634 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'グッドウィル', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'ツートップ', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 21:44:22,641 - DEBUG - super().get(http://c.kakaku.com/forwarder/forward.aspx?ShopCD=1827&PrdKey=K0000987818&Url=http%3A%2F%2Fck%2Ejp%2Eap%2Evaluecommerce%2Ecom%2Fservlet%2Freferral%3Fsid%3D36997%26pid%3D878233630%26vc%5Furl%3Dhttp%253A%252F%252Fshop%2Etsukumo%2Eco%2Ejp%252Fgoods%252F0730143308755%252F%253Fcid%253Dkakakukcom&Hash=d3cee83bde22bd1da2b65b9f9aeac6a0) start
+2017-08-23 21:44:22,873 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:44:22,883 - DEBUG - wait redirect 0[sec]
+2017-08-23 21:44:23,892 - DEBUG - wait redirect 1[sec]
+2017-08-23 21:44:23,902 - DEBUG - move to shop page finished. page title: Ryzen Threadripper 1950X (YD195XA8AEWOF） ※半期に一度の決算セール！ - AMD - 自作PC・PCパーツが豊富！PC専門店【TSUKUMO】
+2017-08-23 21:44:23,903 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:44:23,908 - DEBUG - path[click_vendor3], suffix[.png]
+2017-08-23 21:44:23,912 - DEBUG - saved to click_vendor3.png
+2017-08-23 21:44:23,912 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:44:23,912 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:44:23,917 - DEBUG - path[click_vendor3], suffix[.pdf]
+2017-08-23 21:44:23,994 - DEBUG - saved to click_vendor3.pdf
+2017-08-23 21:44:23,994 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:44:23,994 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:44:24,001 - DEBUG - path[click_vendor3], suffix[.html]
+2017-08-23 21:44:24,010 - DEBUG - saved to click_vendor3.html
+2017-08-23 21:44:24,010 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:44:24,010 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 21:51:58,436 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140083956170480]
+2017-08-23 21:51:58,445 - DEBUG - Kakaku.create_driver start
+2017-08-23 21:51:58,448 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:51:58,502 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:51:59,547 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 21:51:59,564 - DEBUG - Kakaku.__init__ start
+2017-08-23 21:51:59,564 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 21:51:59,565 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 21:51:59,565 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 21:51:59,565 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 21:51:59,565 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 21:52:02,600 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:52:02,600 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 21:52:02,600 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:02,601 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:52:02,601 - DEBUG - valid. return True
+2017-08-23 21:52:02,620 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 21:52:02,621 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 21:52:02,621 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 21:52:02,621 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 21:52:02,622 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:02,622 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 21:52:02,622 - DEBUG - valid. return True
+2017-08-23 21:52:02,634 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 21:52:02,719 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 21:52:02,719 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 21:52:02,719 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:02,719 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 21:52:02,719 - DEBUG - valid. return True
+2017-08-23 21:52:02,743 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 21:52:02,744 - DEBUG - PhantomJS_.click start.
+2017-08-23 21:52:04,463 - DEBUG - PhantomJS_.click finished.
+2017-08-23 21:52:04,464 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:52:04,464 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 21:52:04,464 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:04,464 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 21:52:04,464 - DEBUG - valid. return True
+2017-08-23 21:52:04,551 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 21:52:04,551 - DEBUG - PhantomJS_.click start.
+2017-08-23 21:52:09,159 - DEBUG - PhantomJS_.click finished.
+2017-08-23 21:52:09,159 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 21:52:09,159 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:09,159 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:52:09,160 - DEBUG - valid. return True
+2017-08-23 21:52:09,186 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 21:52:09,186 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:52:09,187 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 21:52:09,187 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:09,187 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:52:09,187 - DEBUG - valid. return True
+2017-08-23 21:52:09,213 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 21:52:09,214 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:52:09,214 - DEBUG - by: XPATH , + tag: //tr/td/a
+2017-08-23 21:52:09,214 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:52:09,214 - DEBUG - by[XPATH], tag[//tr/td/a]
+2017-08-23 21:52:09,214 - DEBUG - valid. return True
+2017-08-23 21:52:09,261 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[76]
+2017-08-23 21:52:10,623 - DEBUG - num of vendor: 17
+2017-08-23 21:52:10,623 - DEBUG - num of button: 17
+2017-08-23 21:52:10,930 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'グッドウィル', 'ツートップ', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 21:52:10,934 - DEBUG - super().get(http://c.kakaku.com/forwarder/forward.aspx?ShopCD=1827&PrdKey=K0000987818&Url=http%3A%2F%2Fck%2Ejp%2Eap%2Evaluecommerce%2Ecom%2Fservlet%2Freferral%3Fsid%3D36997%26pid%3D878233630%26vc%5Furl%3Dhttp%253A%252F%252Fshop%2Etsukumo%2Eco%2Ejp%252Fgoods%252F0730143308755%252F%253Fcid%253Dkakakukcom&Hash=d3cee83bde22bd1da2b65b9f9aeac6a0) start
+2017-08-23 21:52:11,782 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:52:11,789 - DEBUG - wait redirect 0[sec]
+2017-08-23 21:52:12,793 - DEBUG - wait redirect 1[sec]
+2017-08-23 21:52:13,798 - DEBUG - wait redirect 2[sec]
+2017-08-23 21:52:13,808 - DEBUG - move to shop page finished. page title: Ryzen Threadripper 1950X (YD195XA8AEWOF） ※半期に一度の決算セール！ - AMD - 自作PC・PCパーツが豊富！PC専門店【TSUKUMO】
+2017-08-23 21:52:13,808 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:52:13,812 - DEBUG - path[click_vendor3], suffix[.png]
+2017-08-23 21:52:13,818 - DEBUG - saved to click_vendor3.png
+2017-08-23 21:52:13,818 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:52:13,819 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:52:13,822 - DEBUG - path[click_vendor3], suffix[.pdf]
+2017-08-23 21:52:13,869 - DEBUG - saved to click_vendor3.pdf
+2017-08-23 21:52:13,869 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:52:13,869 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:52:13,874 - DEBUG - path[click_vendor3], suffix[.html]
+2017-08-23 21:52:13,883 - DEBUG - saved to click_vendor3.html
+2017-08-23 21:52:13,883 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:52:13,883 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 21:52:27,774 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140232533483024]
+2017-08-23 21:52:27,780 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:52:27,819 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:52:28,868 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-23 21:52:28,868 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-23 21:52:28,869 - DEBUG - filename: click_vendor3.png
+2017-08-23 21:52:28,869 - DEBUG - PhantomJS_.convert_png_to_pdf finished
+2017-08-23 21:53:16,915 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139658007293456]
+2017-08-23 21:53:16,921 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:53:16,972 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:53:18,033 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-23 21:53:18,033 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-23 21:53:18,034 - DEBUG - filename: click_vendor3.png
+2017-08-23 21:53:18,038 - DEBUG - PhantomJS_.convert_png_to_pdf finished
+2017-08-23 21:55:28,191 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140699500682768]
+2017-08-23 21:55:28,200 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:55:28,235 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:55:29,286 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-23 21:55:29,286 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-23 21:55:29,286 - DEBUG - filename: click_vendor3.png
+2017-08-23 21:55:29,463 - DEBUG - Importing BmpImagePlugin
+2017-08-23 21:55:29,463 - DEBUG - Importing BufrStubImagePlugin
+2017-08-23 21:55:29,481 - DEBUG - Importing CurImagePlugin
+2017-08-23 21:55:29,483 - DEBUG - Importing DcxImagePlugin
+2017-08-23 21:55:29,488 - DEBUG - Importing DdsImagePlugin
+2017-08-23 21:55:29,501 - DEBUG - Importing EpsImagePlugin
+2017-08-23 21:55:29,502 - DEBUG - Importing FitsStubImagePlugin
+2017-08-23 21:55:29,503 - DEBUG - Importing FliImagePlugin
+2017-08-23 21:55:29,503 - DEBUG - Importing FpxImagePlugin
+2017-08-23 21:55:29,505 - DEBUG - Importing FtexImagePlugin
+2017-08-23 21:55:29,506 - DEBUG - Importing GbrImagePlugin
+2017-08-23 21:55:29,506 - DEBUG - Importing GifImagePlugin
+2017-08-23 21:55:29,506 - DEBUG - Importing GribStubImagePlugin
+2017-08-23 21:55:29,507 - DEBUG - Importing Hdf5StubImagePlugin
+2017-08-23 21:55:29,507 - DEBUG - Importing IcnsImagePlugin
+2017-08-23 21:55:29,508 - DEBUG - Importing IcoImagePlugin
+2017-08-23 21:55:29,510 - DEBUG - Importing ImImagePlugin
+2017-08-23 21:55:29,512 - DEBUG - Importing ImtImagePlugin
+2017-08-23 21:55:29,513 - DEBUG - Importing IptcImagePlugin
+2017-08-23 21:55:29,514 - DEBUG - Importing JpegImagePlugin
+2017-08-23 21:55:29,514 - DEBUG - Importing Jpeg2KImagePlugin
+2017-08-23 21:55:29,524 - DEBUG - Importing McIdasImagePlugin
+2017-08-23 21:55:29,525 - DEBUG - Importing MicImagePlugin
+2017-08-23 21:55:29,526 - DEBUG - Importing MpegImagePlugin
+2017-08-23 21:55:29,527 - DEBUG - Importing MpoImagePlugin
+2017-08-23 21:55:29,527 - DEBUG - Importing MspImagePlugin
+2017-08-23 21:55:29,528 - DEBUG - Importing PalmImagePlugin
+2017-08-23 21:55:29,530 - DEBUG - Importing PcdImagePlugin
+2017-08-23 21:55:29,531 - DEBUG - Importing PcxImagePlugin
+2017-08-23 21:55:29,531 - DEBUG - Importing PdfImagePlugin
+2017-08-23 21:55:29,532 - DEBUG - Importing PixarImagePlugin
+2017-08-23 21:55:29,532 - DEBUG - Importing PngImagePlugin
+2017-08-23 21:55:29,532 - DEBUG - Importing PpmImagePlugin
+2017-08-23 21:55:29,532 - DEBUG - Importing PsdImagePlugin
+2017-08-23 21:55:29,533 - DEBUG - Importing SgiImagePlugin
+2017-08-23 21:55:29,533 - DEBUG - Importing SpiderImagePlugin
+2017-08-23 21:55:29,534 - DEBUG - Importing SunImagePlugin
+2017-08-23 21:55:29,534 - DEBUG - Importing TgaImagePlugin
+2017-08-23 21:55:29,535 - DEBUG - Importing TiffImagePlugin
+2017-08-23 21:55:29,535 - DEBUG - Importing WebPImagePlugin
+2017-08-23 21:55:29,536 - DEBUG - Image: failed to import WebPImagePlugin: cannot import name '_webp'
+2017-08-23 21:55:29,536 - DEBUG - Importing WmfImagePlugin
+2017-08-23 21:55:29,537 - DEBUG - Importing XbmImagePlugin
+2017-08-23 21:55:29,552 - DEBUG - Importing XpmImagePlugin
+2017-08-23 21:55:29,553 - DEBUG - Importing XVThumbImagePlugin
+2017-08-23 21:56:14,332 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140055083286032]
+2017-08-23 21:56:14,337 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:56:14,372 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:56:15,429 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-23 21:56:15,429 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-23 21:56:15,429 - DEBUG - filename: click_vendor3.png
+2017-08-23 21:56:15,467 - DEBUG - Importing BmpImagePlugin
+2017-08-23 21:56:15,467 - DEBUG - Importing BufrStubImagePlugin
+2017-08-23 21:56:15,468 - DEBUG - Importing CurImagePlugin
+2017-08-23 21:56:15,468 - DEBUG - Importing DcxImagePlugin
+2017-08-23 21:56:15,469 - DEBUG - Importing DdsImagePlugin
+2017-08-23 21:56:15,470 - DEBUG - Importing EpsImagePlugin
+2017-08-23 21:56:15,471 - DEBUG - Importing FitsStubImagePlugin
+2017-08-23 21:56:15,471 - DEBUG - Importing FliImagePlugin
+2017-08-23 21:56:15,472 - DEBUG - Importing FpxImagePlugin
+2017-08-23 21:56:15,478 - DEBUG - Importing FtexImagePlugin
+2017-08-23 21:56:15,480 - DEBUG - Importing GbrImagePlugin
+2017-08-23 21:56:15,481 - DEBUG - Importing GifImagePlugin
+2017-08-23 21:56:15,482 - DEBUG - Importing GribStubImagePlugin
+2017-08-23 21:56:15,482 - DEBUG - Importing Hdf5StubImagePlugin
+2017-08-23 21:56:15,483 - DEBUG - Importing IcnsImagePlugin
+2017-08-23 21:56:15,484 - DEBUG - Importing IcoImagePlugin
+2017-08-23 21:56:15,486 - DEBUG - Importing ImImagePlugin
+2017-08-23 21:56:15,487 - DEBUG - Importing ImtImagePlugin
+2017-08-23 21:56:15,488 - DEBUG - Importing IptcImagePlugin
+2017-08-23 21:56:15,489 - DEBUG - Importing JpegImagePlugin
+2017-08-23 21:56:15,489 - DEBUG - Importing Jpeg2KImagePlugin
+2017-08-23 21:56:15,490 - DEBUG - Importing McIdasImagePlugin
+2017-08-23 21:56:15,492 - DEBUG - Importing MicImagePlugin
+2017-08-23 21:56:15,494 - DEBUG - Importing MpegImagePlugin
+2017-08-23 21:56:15,495 - DEBUG - Importing MpoImagePlugin
+2017-08-23 21:56:15,497 - DEBUG - Importing MspImagePlugin
+2017-08-23 21:56:15,498 - DEBUG - Importing PalmImagePlugin
+2017-08-23 21:56:15,500 - DEBUG - Importing PcdImagePlugin
+2017-08-23 21:56:15,501 - DEBUG - Importing PcxImagePlugin
+2017-08-23 21:56:15,501 - DEBUG - Importing PdfImagePlugin
+2017-08-23 21:56:15,502 - DEBUG - Importing PixarImagePlugin
+2017-08-23 21:56:15,503 - DEBUG - Importing PngImagePlugin
+2017-08-23 21:56:15,504 - DEBUG - Importing PpmImagePlugin
+2017-08-23 21:56:15,504 - DEBUG - Importing PsdImagePlugin
+2017-08-23 21:56:15,505 - DEBUG - Importing SgiImagePlugin
+2017-08-23 21:56:15,506 - DEBUG - Importing SpiderImagePlugin
+2017-08-23 21:56:15,507 - DEBUG - Importing SunImagePlugin
+2017-08-23 21:56:15,507 - DEBUG - Importing TgaImagePlugin
+2017-08-23 21:56:15,509 - DEBUG - Importing TiffImagePlugin
+2017-08-23 21:56:15,510 - DEBUG - Importing WebPImagePlugin
+2017-08-23 21:56:15,511 - DEBUG - Image: failed to import WebPImagePlugin: cannot import name '_webp'
+2017-08-23 21:56:15,512 - DEBUG - Importing WmfImagePlugin
+2017-08-23 21:56:15,513 - DEBUG - Importing XbmImagePlugin
+2017-08-23 21:56:15,515 - DEBUG - Importing XpmImagePlugin
+2017-08-23 21:56:15,516 - DEBUG - Importing XVThumbImagePlugin
+2017-08-23 21:59:13,842 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139829884853832]
+2017-08-23 21:59:13,849 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:59:13,894 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:59:14,953 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-23 21:59:14,953 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-23 21:59:14,953 - DEBUG - filename: click_vendor3.png
+2017-08-23 21:59:14,961 - DEBUG - PhantomJS_.convert_png_to_pdf finished
