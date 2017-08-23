@@ -5465,3 +5465,12 @@ Screenshot: available via screen
 2017-08-23 21:30:56,552 - DEBUG - get finished. wait 0 seconds
 2017-08-23 21:30:56,552 - DEBUG - PhantomJS_.reconnect finished
 2017-08-23 21:30:56,552 - DEBUG - retries -= 1. retries[8]
+2017-08-23 21:31:27,494 - DEBUG - caught TimeoutException at wait_appearance_of_tag. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 21:31:27,494 - DEBUG - command: by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:31:27,497 - DEBUG - PhantomJS_.reconnect start
+2017-08-23 21:31:27,500 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:31:27,501 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:31:28,547 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 21:31:32,128 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:31:32,129 - DEBUG - PhantomJS_.reconnect finished
+2017-08-23 21:31:32,129 - DEBUG - retries -= 1. retries[7]
