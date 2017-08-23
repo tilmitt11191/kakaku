@@ -20,4 +20,4 @@ max_filename_length: 200 # Byte
 phantomJS_pass: "/usr/local/bin/phantomjs"
 phantomJS_wait_time_per_get: 0
 phantomJS_load_timeout: 5
-wait_time_per_retry: 0
+wait_time_per_retry: 5
