@@ -2612,3 +2612,589 @@ Screenshot: available via screen
 2017-08-22 20:51:42,919 - DEBUG - saved to click_vendor.html
 2017-08-22 20:51:42,926 - DEBUG - PhantomJS_.save_current_page finished
 2017-08-22 20:51:42,927 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 20:12:21,405 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139986253622968]
+2017-08-23 20:12:21,420 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:12:21,428 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:12:21,521 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:12:22,610 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:12:22,629 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:12:22,630 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:12:22,630 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:12:22,630 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:12:22,630 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:12:22,630 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:12:25,846 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:12:25,847 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:12:25,847 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:25,847 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:12:25,847 - DEBUG - valid. return True
+2017-08-23 20:12:25,862 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:12:25,863 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:12:25,863 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:12:25,863 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:12:25,863 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:25,864 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:12:25,864 - DEBUG - valid. return True
+2017-08-23 20:12:25,870 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:12:25,941 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:12:25,942 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:12:25,942 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:25,942 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:12:25,942 - DEBUG - valid. return True
+2017-08-23 20:12:25,961 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:12:25,961 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:12:27,688 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:12:27,689 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:12:27,689 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:12:27,689 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:27,689 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:12:27,689 - DEBUG - valid. return True
+2017-08-23 20:12:27,723 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:12:27,723 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:12:32,196 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:12:32,196 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:12:32,197 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:12:32,197 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:32,197 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:12:32,197 - DEBUG - valid. return True
+2017-08-23 20:12:32,212 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 20:12:32,213 - DEBUG - num of vendor: 17
+2017-08-23 20:12:32,446 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'グッドウィル', 'ツートップ', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 20:12:32,446 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:12:33,878 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:12:33,879 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:12:33,879 - DEBUG - by: XPATH , + tag: //p[@class="imgvm"]/a
+2017-08-23 20:12:33,879 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:12:33,880 - DEBUG - by[XPATH], tag[//p[@class="imgvm"]/a]
+2017-08-23 20:12:33,880 - DEBUG - valid. return True
+2017-08-23 20:12:33,897 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:12:33,898 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 20:14:05,055 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139925682224824]
+2017-08-23 20:14:05,064 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:14:05,070 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:14:05,106 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:14:06,142 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:14:06,153 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:14:06,153 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:14:06,153 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:14:06,153 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:14:06,154 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:14:06,154 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:14:08,424 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:14:08,425 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:14:08,425 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:08,425 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:14:08,425 - DEBUG - valid. return True
+2017-08-23 20:14:08,445 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:14:08,445 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:14:08,445 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:14:08,445 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:14:08,446 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:08,446 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:14:08,446 - DEBUG - valid. return True
+2017-08-23 20:14:08,452 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:14:08,534 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:14:08,535 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:14:08,535 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:08,535 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:14:08,535 - DEBUG - valid. return True
+2017-08-23 20:14:08,545 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:14:08,545 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:14:10,177 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:14:10,177 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:14:10,177 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:14:10,177 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:10,178 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:14:10,178 - DEBUG - valid. return True
+2017-08-23 20:14:10,210 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:14:10,211 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:14:15,986 - DEBUG - caught TimeoutException at click(button).
+2017-08-23 20:14:15,987 - DEBUG - reconnect to http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/
+2017-08-23 20:14:15,987 - DEBUG - PhantomJS_.reconnect start
+2017-08-23 20:14:15,994 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:14:15,995 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:14:17,047 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 20:14:22,538 - DEBUG - caught TimeoutException at get. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 20:14:22,538 - DEBUG - command: by[xpath], tag[]
+2017-08-23 20:14:22,538 - WARNING - caught TimeoutException at get. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 20:14:22,538 - WARNING - command: by[xpath], tag[]
+2017-08-23 20:14:22,539 - WARNING - save_current_page to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.html and png
+2017-08-23 20:14:22,539 - WARNING - Message: {"errorMessage":"URL 'http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:34969","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/\", \"sessionId\": \"33e16930-87f4-11e7-b95c-6901adc5ee6c\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/33e16930-87f4-11e7-b95c-6901adc5ee6c/url"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/media/sf_f/program/kakaku/src/scraping/../../lib/scraping/phantomjs_.py", line 103, in click
+    button.click()
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py", line 77, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py", line 493, in _execute
+    return self._parent.execute(command, params)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in execute
+    self.error_handler.check_response(response)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: {"errorMessage":"Click failed: timeout","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"81","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:60710","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"id\": \":wdc:1503486850208\", \"sessionId\": \"2d61e5d0-87f4-11e7-b5c3-53ec2840e0ac\"}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2d61e5d0-87f4-11e7-b5c3-53ec2840e0ac/element/:wdc:1503486850208/click"}}
+Screenshot: available via screen
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/sf_f/program/kakaku/src/scraping/../../lib/scraping/phantomjs_.py", line 74, in get
+    super().get(url)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 264, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in execute
+    self.error_handler.check_response(response)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: {"errorMessage":"URL 'http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:34969","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/\", \"sessionId\": \"33e16930-87f4-11e7-b95c-6901adc5ee6c\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/33e16930-87f4-11e7-b95c-6901adc5ee6c/url"}}
+Screenshot: available via screen
+
+2017-08-23 20:14:22,571 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:14:22,579 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.html]
+2017-08-23 20:14:22,599 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.html
+2017-08-23 20:14:22,599 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:14:22,599 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:14:22,604 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.png]
+2017-08-23 20:14:23,027 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.png
+2017-08-23 20:14:23,028 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:14:23,028 - DEBUG - return False
+2017-08-23 20:14:23,039 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 20:14:24,105 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:14:24,106 - DEBUG - PhantomJS_.reconnect finished
+2017-08-23 20:14:24,113 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:14:24,114 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:14:24,114 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:24,114 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:14:24,114 - DEBUG - valid. return True
+2017-08-23 20:14:24,386 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[0]
+2017-08-23 20:14:24,387 - DEBUG - num of vendor: 0
+2017-08-23 20:14:24,387 - ERROR - num of vendor == 0. Please retry!
+2017-08-23 20:14:26,685 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140551430225592]
+2017-08-23 20:14:26,695 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:14:26,698 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:14:26,736 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:14:27,773 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:14:27,782 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:14:27,783 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:14:27,783 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:14:27,783 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:14:27,783 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:14:27,783 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:14:30,217 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:14:30,218 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:14:30,218 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:30,218 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:14:30,218 - DEBUG - valid. return True
+2017-08-23 20:14:30,234 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:14:30,234 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:14:30,234 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:14:30,234 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:14:30,234 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:30,234 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:14:30,235 - DEBUG - valid. return True
+2017-08-23 20:14:30,240 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:14:30,316 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:14:30,316 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:14:30,316 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:30,317 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:14:30,317 - DEBUG - valid. return True
+2017-08-23 20:14:30,326 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:14:30,326 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:14:32,117 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:14:32,117 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:14:32,117 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:14:32,117 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:32,118 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:14:32,118 - DEBUG - valid. return True
+2017-08-23 20:14:32,159 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:14:32,160 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:14:38,027 - DEBUG - caught TimeoutException at click(button).
+2017-08-23 20:14:38,028 - DEBUG - reconnect to http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/
+2017-08-23 20:14:38,028 - DEBUG - PhantomJS_.reconnect start
+2017-08-23 20:14:38,033 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:14:38,033 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:14:39,087 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 20:14:44,495 - DEBUG - caught TimeoutException at get. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 20:14:44,495 - DEBUG - command: by[xpath], tag[]
+2017-08-23 20:14:44,496 - WARNING - caught TimeoutException at get. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 20:14:44,496 - WARNING - command: by[xpath], tag[]
+2017-08-23 20:14:44,496 - WARNING - save_current_page to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.html and png
+2017-08-23 20:14:44,496 - WARNING - Message: {"errorMessage":"URL 'http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51841","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/\", \"sessionId\": \"4104c0d0-87f4-11e7-be87-5716734c65fb\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/4104c0d0-87f4-11e7-be87-5716734c65fb/url"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/media/sf_f/program/kakaku/src/scraping/../../lib/scraping/phantomjs_.py", line 103, in click
+    button.click()
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py", line 77, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py", line 493, in _execute
+    return self._parent.execute(command, params)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in execute
+    self.error_handler.check_response(response)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: {"errorMessage":"Click failed: timeout","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"81","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:36787","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"id\": \":wdc:1503486872156\", \"sessionId\": \"3a461190-87f4-11e7-9cef-11923e14c11b\"}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/3a461190-87f4-11e7-9cef-11923e14c11b/element/:wdc:1503486872156/click"}}
+Screenshot: available via screen
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/sf_f/program/kakaku/src/scraping/../../lib/scraping/phantomjs_.py", line 74, in get
+    super().get(url)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 264, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in execute
+    self.error_handler.check_response(response)
+  File "/home/alladmin/.pyenv/versions/anaconda3-4.3.0/envs/paper_graph/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: {"errorMessage":"URL 'http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51841","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/\", \"sessionId\": \"4104c0d0-87f4-11e7-be87-5716734c65fb\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/4104c0d0-87f4-11e7-be87-5716734c65fb/url"}}
+Screenshot: available via screen
+
+2017-08-23 20:14:44,502 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:14:44,510 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.html]
+2017-08-23 20:14:44,522 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.html
+2017-08-23 20:14:44,523 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:14:44,523 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:14:44,529 - DEBUG - path[../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.png]
+2017-08-23 20:14:44,965 - DEBUG - saved to ../../var/ss/TimeoutExceptionhttpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.png
+2017-08-23 20:14:44,965 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:14:44,965 - DEBUG - return False
+2017-08-23 20:14:44,974 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 20:14:46,885 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:14:46,885 - DEBUG - PhantomJS_.reconnect finished
+2017-08-23 20:14:46,900 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:14:46,901 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:14:46,901 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:14:46,901 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:14:46,908 - DEBUG - valid. return True
+2017-08-23 20:14:47,166 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[0]
+2017-08-23 20:14:47,166 - DEBUG - num of vendor: 0
+2017-08-23 20:14:47,166 - ERROR - num of vendor == 0. Please retry!
+2017-08-23 20:18:49,404 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140195538714296]
+2017-08-23 20:18:49,415 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:18:49,419 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:18:49,452 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:18:50,490 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:18:50,500 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:18:50,501 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:18:50,501 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:18:50,501 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:18:50,501 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:18:50,501 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:18:53,957 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:18:53,957 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:18:53,957 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:53,958 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:18:53,958 - DEBUG - valid. return True
+2017-08-23 20:18:53,975 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:18:53,975 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:18:53,975 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:18:53,975 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:18:53,976 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:53,976 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:18:53,976 - DEBUG - valid. return True
+2017-08-23 20:18:53,985 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:18:54,113 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:18:54,113 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:18:54,114 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:54,114 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:18:54,114 - DEBUG - valid. return True
+2017-08-23 20:18:54,132 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:18:54,132 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:18:55,881 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:18:55,881 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:18:55,881 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:18:55,881 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:55,881 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:18:55,881 - DEBUG - valid. return True
+2017-08-23 20:18:55,899 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:18:55,899 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:18:58,766 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:18:58,767 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:18:58,767 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:58,767 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:18:58,767 - DEBUG - valid. return True
+2017-08-23 20:18:58,793 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:18:58,794 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:18:58,794 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:18:58,794 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:18:58,795 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:18:58,795 - DEBUG - valid. return True
+2017-08-23 20:18:58,829 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 20:18:58,830 - DEBUG - num of vendor: 17
+2017-08-23 20:18:59,180 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'グッドウィル', 'ツートップ', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 20:18:59,180 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:02,472 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:19:02,473 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:19:02,473 - DEBUG - by: XPATH , + tag: //p[@class="imgvm"]/a
+2017-08-23 20:19:02,473 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:02,473 - DEBUG - by[XPATH], tag[//p[@class="imgvm"]/a]
+2017-08-23 20:19:02,473 - DEBUG - valid. return True
+2017-08-23 20:19:02,486 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:19:02,486 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:23,006 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140509766815472]
+2017-08-23 20:19:23,015 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:19:23,019 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:19:23,057 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:19:24,101 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:19:24,107 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:19:24,108 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:19:24,108 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:19:24,108 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:19:24,108 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:19:24,108 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:19:27,342 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:19:27,342 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:19:27,342 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:27,343 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:19:27,343 - DEBUG - valid. return True
+2017-08-23 20:19:27,363 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:19:27,364 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:19:27,364 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:19:27,364 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:19:27,365 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:27,365 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:19:27,365 - DEBUG - valid. return True
+2017-08-23 20:19:27,376 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:19:27,460 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:19:27,460 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:19:27,461 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:27,461 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:19:27,461 - DEBUG - valid. return True
+2017-08-23 20:19:27,480 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:19:27,481 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:29,063 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:19:29,064 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:19:29,064 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:19:29,064 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:29,064 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:19:29,064 - DEBUG - valid. return True
+2017-08-23 20:19:29,077 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:19:29,077 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:32,772 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:19:32,772 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:19:32,772 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:32,773 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:19:32,773 - DEBUG - valid. return True
+2017-08-23 20:19:32,788 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:19:32,788 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:19:32,788 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:19:32,788 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:32,788 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:19:32,788 - DEBUG - valid. return True
+2017-08-23 20:19:32,799 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 20:19:32,799 - DEBUG - num of vendor: 17
+2017-08-23 20:19:33,037 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'グッドウィル', 'ツートップ', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 20:19:33,037 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:34,976 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:19:34,977 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:19:34,977 - DEBUG - by: XPATH , + tag: //p[@class="imgvm"]/a
+2017-08-23 20:19:34,978 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:19:34,978 - DEBUG - by[XPATH], tag[//p[@class="imgvm"]/a]
+2017-08-23 20:19:34,978 - DEBUG - valid. return True
+2017-08-23 20:19:34,991 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:19:34,991 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:19:35,559 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:19:35,559 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:19:35,564 - DEBUG - path[click_go_to_shop], suffix[.png]
+2017-08-23 20:19:35,904 - DEBUG - saved to click_go_to_shop.png
+2017-08-23 20:19:35,904 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:19:35,904 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 20:19:35,909 - DEBUG - path[click_go_to_shop], suffix[.html]
+2017-08-23 20:19:35,918 - DEBUG - saved to click_go_to_shop.html
+2017-08-23 20:19:35,919 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 20:19:35,919 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 20:26:20,968 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139725553299128]
+2017-08-23 20:26:20,977 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:26:20,982 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:26:21,022 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:26:22,057 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:26:22,069 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:26:22,070 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:26:22,085 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:26:22,090 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:26:22,092 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:26:22,092 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:26:24,949 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:26:24,950 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:26:24,950 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:24,950 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:26:24,950 - DEBUG - valid. return True
+2017-08-23 20:26:24,965 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:26:24,966 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:26:24,966 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:26:24,966 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:26:24,966 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:24,966 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:26:24,967 - DEBUG - valid. return True
+2017-08-23 20:26:24,974 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:26:25,093 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:26:25,094 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:26:25,094 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:25,094 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:26:25,094 - DEBUG - valid. return True
+2017-08-23 20:26:25,111 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:26:25,112 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:26:26,807 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:26:26,809 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:26:26,809 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:26:26,810 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:26,810 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:26:26,810 - DEBUG - valid. return True
+2017-08-23 20:26:26,839 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:26:26,839 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:26:30,767 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:26:30,767 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:26:30,767 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:30,768 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:26:30,768 - DEBUG - valid. return True
+2017-08-23 20:26:30,782 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:26:30,782 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:26:30,782 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:26:30,782 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:30,782 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:26:30,782 - DEBUG - valid. return True
+2017-08-23 20:26:30,792 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 20:26:30,793 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:26:30,793 - DEBUG - by: XPATH , + tag: //tr/td/a
+2017-08-23 20:26:30,793 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:26:30,793 - DEBUG - by[XPATH], tag[//tr/td/a]
+2017-08-23 20:26:30,793 - DEBUG - valid. return True
+2017-08-23 20:26:30,814 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[76]
+2017-08-23 20:26:30,814 - DEBUG - num of vendor: 17
+2017-08-23 20:26:30,814 - DEBUG - num of button: 76
+2017-08-23 20:26:31,059 - DEBUG - vendor list: ['TSUKUMO', 'ソフマップ.com', 'パソコン工房', 'ＰＣワンズ', 'PCSHOPアーク', 'アキハバラe市場', 'ソフマップ', 'イートレンド', 'ひかりTVshopping', 'コジマネット', 'Joshin web', 'Amazon.co.jp', 'グッドウィル', 'ツートップ', 'グッドウィル', 'ビックカメラ.com', 'ヨドバシ.com']
+2017-08-23 20:26:31,060 - DEBUG - Kakaku.save_cheapest_pdf finished.
+2017-08-23 20:29:18,389 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139887525195504]
+2017-08-23 20:29:18,404 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:29:18,411 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:29:18,452 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:29:19,496 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:29:19,508 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:29:19,509 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:29:19,509 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:29:19,509 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:29:19,509 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:29:19,509 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:29:22,021 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:29:22,021 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:29:22,022 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:22,022 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:29:22,022 - DEBUG - valid. return True
+2017-08-23 20:29:22,046 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:29:22,046 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:29:22,046 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:29:22,046 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:29:22,047 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:22,047 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:29:22,047 - DEBUG - valid. return True
+2017-08-23 20:29:22,054 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:29:22,155 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:29:22,155 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:29:22,156 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:22,156 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:29:22,156 - DEBUG - valid. return True
+2017-08-23 20:29:22,169 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:29:22,169 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:29:24,042 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:29:24,042 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:29:24,043 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:29:24,043 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:24,043 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:29:24,043 - DEBUG - valid. return True
+2017-08-23 20:29:24,058 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:29:24,058 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:29:26,625 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:29:26,625 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:29:26,625 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:26,625 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:29:26,625 - DEBUG - valid. return True
+2017-08-23 20:29:26,642 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:29:26,642 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:29:26,642 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:29:26,642 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:26,642 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:29:26,643 - DEBUG - valid. return True
+2017-08-23 20:29:26,661 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[17]
+2017-08-23 20:29:26,661 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:29:26,661 - DEBUG - by: XPATH , + tag: //tr/td/a
+2017-08-23 20:29:26,661 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:29:26,662 - DEBUG - by[XPATH], tag[//tr/td/a]
+2017-08-23 20:29:26,662 - DEBUG - valid. return True
+2017-08-23 20:29:26,712 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[76]
+2017-08-23 20:33:28,765 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[139926645604024]
+2017-08-23 20:33:28,776 - DEBUG - Kakaku.create_driver start
+2017-08-23 20:33:28,781 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:33:28,818 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:33:29,859 - DEBUG - Kakaku.create_driver finished. return driver
+2017-08-23 20:33:29,871 - DEBUG - Kakaku.__init__ start
+2017-08-23 20:33:29,871 - INFO - product name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:33:29,871 - DEBUG - Kakaku.save_cheapest_pdf start.
+2017-08-23 20:33:29,871 - DEBUG - product_name[Ryzen Threadripper 1950X BOX]
+2017-08-23 20:33:29,871 - DEBUG - Kakaku.move_to_top_page start.
+2017-08-23 20:33:29,871 - DEBUG - super().get(http://kakaku.com/) start
+2017-08-23 20:33:32,151 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:33:32,151 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:33:32,152 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:33:32,152 - DEBUG - by[xpath], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:33:32,152 - DEBUG - valid. return True
+2017-08-23 20:33:32,183 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 20:33:32,184 - DEBUG - Kakaku.move_to_top_page finished.
+2017-08-23 20:33:32,184 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:33:32,184 - DEBUG - by: XPATH , + tag: //input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]
+2017-08-23 20:33:32,184 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:33:32,184 - DEBUG - by[XPATH], tag[//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]]
+2017-08-23 20:33:32,185 - DEBUG - valid. return True
+2017-08-23 20:33:32,202 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:33:32,289 - DEBUG - PhantomJS_.find_element_with_handling_exceptions start.
+2017-08-23 20:33:32,289 - DEBUG - by: XPATH , + tag: //span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]
+2017-08-23 20:33:32,289 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:33:32,290 - DEBUG - by[XPATH], tag[//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]]
+2017-08-23 20:33:32,290 - DEBUG - valid. return True
+2017-08-23 20:33:32,304 - DEBUG - PhantomJS_.find_element_with_handling_exceptions finished.
+2017-08-23 20:33:32,304 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:33:34,212 - DEBUG - PhantomJS_.click finished.
+2017-08-23 20:33:34,213 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 20:33:34,213 - DEBUG - by: XPATH , + tag: //a[@class="selfLink"]
+2017-08-23 20:33:34,214 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:33:34,214 - DEBUG - by[XPATH], tag[//a[@class="selfLink"]]
+2017-08-23 20:33:34,215 - DEBUG - valid. return True
+2017-08-23 20:33:34,249 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[1]
+2017-08-23 20:33:34,251 - DEBUG - PhantomJS_.click start.
+2017-08-23 20:33:40,261 - DEBUG - caught TimeoutException at click(button).
+2017-08-23 20:33:40,262 - DEBUG - reconnect to http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/
+2017-08-23 20:33:40,262 - DEBUG - PhantomJS_.reconnect start
+2017-08-23 20:33:40,270 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 20:33:40,270 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 20:33:41,365 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 20:33:43,462 - DEBUG - get finished. wait 0 seconds
+2017-08-23 20:33:43,463 - DEBUG - PhantomJS_.reconnect finished
+2017-08-23 20:33:43,479 - DEBUG - PhantomJS_.wait_appearance_of_tag start. tag: //p[@class="wordwrapShop"]/a
+2017-08-23 20:33:43,479 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 20:33:43,480 - DEBUG - by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 20:33:43,480 - DEBUG - valid. return True

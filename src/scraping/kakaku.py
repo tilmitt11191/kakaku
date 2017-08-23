@@ -43,8 +43,18 @@ class Kakaku:
 		self.driver.click(search_results[0])
 		#tag = '//td[@class="fRed"]/p[@class="wordwrapTrs"]/a'
 		tag = '//p[@class="wordwrapShop"]/a'
+		self.driver.wait_appearance_of_tag(by="xpath", tag=tag)
 		vendor_elements = self.driver.find_elements_with_handling_exceptions(tag=tag)
+		tag = '//tr/td/a'
+		button_elements = []
+		els = self.driver.find_elements_with_handling_exceptions(tag=tag)
+		for el in els:
+			print(el.get_property())
+			#if el.get_att("onclick"):
+			#	button_elements.append(el)
 		self.log.debug("num of vendor: " + str(len(vendor_elements)))
+		self.log.debug("num of button: " + str(len(button_elements)))
+		
 		if len(vendor_elements) == 0:
 			self.log.error("num of vendor == 0. Please retry!")
 			exit(0)
@@ -60,10 +70,21 @@ class Kakaku:
 			self.log.error("No vendor of product_name[" + str(product_name) + "].")
 			self.log.error("Vendor list: " + str(self.target_stores))
 			exit(0)
+		"""
 		self.driver.click(cheapest_vendor)
-		self.driver.save_current_page("click_vendor.png")
-		self.driver.save_current_page("click_vendor.html")
-
+		#self.driver.save_current_page("click_vendor.png")
+		#self.driver.save_current_page("click_vendor.html")
+		tag = '//p[@class="imgvm"]/a'
+		go_to_shop_button = self.driver.find_elements_with_handling_exceptions(tag=tag)
+		if len(vendor_elements) == 1:
+			self.log.error("num of go_to_shop_button != 1. Use first button!")
+		self.driver.click(go_to_shop_button[0])
+		self.driver.save_current_page("click_go_to_shop.png")
+		self.driver.save_current_page("click_go_to_shop.html")
+		
+		
+		print(len(go_to_shop_button))
+		"""
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished.")
 
 	def move_to_top_page(self, timeout=30):
