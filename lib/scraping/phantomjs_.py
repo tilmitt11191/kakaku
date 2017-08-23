@@ -276,13 +276,14 @@ class PhantomJS_(webdriver.PhantomJS):
 			f.close()
 		elif suffix==".png":
 			self.save_screenshot(filename)
+		elif suffix == ".pdf":
+			self.save_screenshot(filename)
 		else:
 			self.log.error(__class__.__name__ + "." + sys._getframe().f_code.co_name)
 			self.log.error("TYPEERROR suffix[" + suffix + "]")
 		self.log.debug("saved to " + filename)
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished")
-		if suffix == ".pdf":
-			pass
+
 	def by_or_tag_is_invalid(self, by, tag):
 		self.log.debug(
 			__class__.__name__ + "." + sys._getframe().f_code.co_name + " start")

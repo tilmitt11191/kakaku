@@ -81,6 +81,7 @@ class Kakaku:
 				break
 			time.sleep(1)
 		self.driver.save_current_page("click_vendor3.png")
+		self.driver.save_current_page("click_vendor3.pdf")
 		self.driver.save_current_page("click_vendor3.html")
 		"""
 		tag = '//p[@class="imgvm"]/a'
