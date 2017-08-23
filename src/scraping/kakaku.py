@@ -77,6 +77,7 @@ class Kakaku:
 		for sec in range(self.conf.getconf("phantomJS_load_timeout")):
 			self.log.debug("wait redirect " + str(sec) + "[sec]")
 			if self.driver.title:
+				self.log.debug("move to shop page finished. page title: " + self.driver.title)
 				break
 			time.sleep(1)
 		self.driver.save_current_page("click_vendor3.png")
