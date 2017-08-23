@@ -5744,3 +5744,38 @@ Screenshot: available via screen
 2017-08-23 21:42:38,622 - DEBUG - get finished. wait 0 seconds
 2017-08-23 21:42:38,622 - DEBUG - PhantomJS_.reconnect finished
 2017-08-23 21:42:38,622 - DEBUG - retries -= 1. retries[1]
+2017-08-23 21:43:08,644 - DEBUG - caught TimeoutException at wait_appearance_of_tag. url[http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/]
+2017-08-23 21:43:08,644 - DEBUG - command: by[xpath], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:43:08,650 - DEBUG - PhantomJS_.reconnect start
+2017-08-23 21:43:08,661 - DEBUG - PhantomJS_.__init__ start
+2017-08-23 21:43:08,662 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-23 21:43:09,723 - DEBUG - super().get(http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/) start
+2017-08-23 21:43:12,357 - DEBUG - get finished. wait 0 seconds
+2017-08-23 21:43:12,358 - DEBUG - PhantomJS_.reconnect finished
+2017-08-23 21:43:12,358 - DEBUG - retries -= 1. retries[0]
+2017-08-23 21:43:12,358 - ERROR - wait error at wait_appearance_of_tag
+2017-08-23 21:43:12,365 - ERROR - retries == 0. please check url: http://kakaku.com/search_results/Ryzen+Threadripper+1950X+BOX/
+2017-08-23 21:43:12,371 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:43:12,376 - DEBUG - path[../../var/ss/error_atwait_appearance_of_tag_httpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.html]
+2017-08-23 21:43:12,388 - DEBUG - saved to ../../var/ss/error_atwait_appearance_of_tag_httpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.html
+2017-08-23 21:43:12,388 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:43:12,388 - DEBUG - PhantomJS_.save_current_page start
+2017-08-23 21:43:12,393 - DEBUG - path[../../var/ss/error_atwait_appearance_of_tag_httpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX], suffix[.png]
+2017-08-23 21:43:12,858 - DEBUG - saved to ../../var/ss/error_atwait_appearance_of_tag_httpkakakucomsearch_resultsRyzen+Threadripper+1950X+BOX.png
+2017-08-23 21:43:12,858 - DEBUG - PhantomJS_.save_current_page finished
+2017-08-23 21:43:12,858 - DEBUG - tag appeared. wait_appearance_of_tag Finished.return True
+2017-08-23 21:43:12,859 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:43:12,859 - DEBUG - by: XPATH , + tag: //p[@class="wordwrapShop"]/a
+2017-08-23 21:43:12,859 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:43:12,859 - DEBUG - by[XPATH], tag[//p[@class="wordwrapShop"]/a]
+2017-08-23 21:43:12,859 - DEBUG - valid. return True
+2017-08-23 21:43:13,162 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[0]
+2017-08-23 21:43:13,162 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions start.
+2017-08-23 21:43:13,163 - DEBUG - by: XPATH , + tag: //tr/td/a
+2017-08-23 21:43:13,163 - DEBUG - PhantomJS_.by_or_tag_is_invalid start
+2017-08-23 21:43:13,163 - DEBUG - by[XPATH], tag[//tr/td/a]
+2017-08-23 21:43:13,163 - DEBUG - valid. return True
+2017-08-23 21:43:13,411 - DEBUG - PhantomJS_.find_elements_with_handling_exceptions finished. return elements[0]
+2017-08-23 21:43:13,412 - DEBUG - num of vendor: 0
+2017-08-23 21:43:13,412 - DEBUG - num of button: 0
+2017-08-23 21:43:13,412 - ERROR - num of vendor == 0. Please retry!
