@@ -1,3 +1,4 @@
 var/log/*
-__pycache__
+var/ss/*
+__pycache__/*
 !.gitkeep
