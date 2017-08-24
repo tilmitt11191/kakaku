@@ -293,22 +293,15 @@ class PhantomJS_(webdriver.PhantomJS):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start")
 		self.log.debug("filename: " + filename)
 
-		import pdfkit
-
-		html_base = os.path.splitext(filename)[0]
-		pdf_out = html_base + '.pdf'
-		self.log.debug("pdf_out: " + pdf_out)
-		options = {
-			'page-size': 'A4',
-			'margin-top': '0.1in',
-			'margin-right': '0.1in',
-			'margin-bottom': '0.1in',
-			'margin-left': '0.1in',
-			'encoding': "UTF-8",
-			'no-outline': None
-		}
-
-		pdfkit.from_file(filename, pdf_out, options=options)
+		basename = os.path.splitext(filename)[0]
+		pdfname = basename + '.pdf'
+		self.log.debug("pdfname: " + pdfname)
+		command = "convert " + filename + " " + pdfname + " > /dev/null 2>&1"
+		self.log.debug(command)
+		try:
+			self.log.debug(os.system(command))
+		except:
+			self.log.warning("error at " + command)
 
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished")
 
