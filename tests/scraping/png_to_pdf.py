@@ -24,7 +24,7 @@ class webdriver_test(unittest.TestCase):
 		pass
 
 	def test_png_to_pdf(self):
-		self.driver.convert_png_to_pdf("click_vendor3.png")
+		self.driver.convert_png_to_pdf("click_vendor3.html")
 
 
 if __name__ == '__main__':

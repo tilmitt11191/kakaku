@@ -293,31 +293,22 @@ class PhantomJS_(webdriver.PhantomJS):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start")
 		self.log.debug("filename: " + filename)
 
-		pdfFile = canvas.Canvas('./python.pdf')
-		pdfFile.saveState()
+		import pdfkit
 
-		pdfFile.setAuthor('python-izm.com')
-		pdfFile.setTitle('PDF生成')
-		pdfFile.setSubject('サンプル')
+		html_base = os.path.splitext(filename)[0]
+		pdf_out = html_base + '.pdf'
+		self.log.debug("pdf_out: " + pdf_out)
+		options = {
+			'page-size': 'A4',
+			'margin-top': '0.1in',
+			'margin-right': '0.1in',
+			'margin-bottom': '0.1in',
+			'margin-left': '0.1in',
+			'encoding': "UTF-8",
+			'no-outline': None
+		}
 
-		# A4
-		pdfFile.setPageSize((21.0*cm, 29.7*cm))
-		# B5
-		# pdfFile.setPageSize((18.2*cm, 25.7*cm))
-
-		pdfFile.setFillColorRGB(0, 0, 100)
-		pdfFile.rect(2*cm, 2*cm, 6*cm, 6*cm, stroke=1, fill=1)
-		pdfFile.setFillColorRGB(0, 0, 0)
-
-		pdfFile.setLineWidth(1)
-		pdfFile.line(10*cm, 20*cm, 10*cm, 10*cm)
-
-		pdfmetrics.registerFont(UnicodeCIDFont('HeiseiKakuGo-W5'))
-		pdfFile.setFont('HeiseiKakuGo-W5', 12)
-		pdfFile.drawString(5*cm, 25*cm, 'あいうえおー')
-
-		pdfFile.restoreState()
-		pdfFile.save()
+		pdfkit.from_file(filename, pdf_out, options=options)
 
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished")
 
