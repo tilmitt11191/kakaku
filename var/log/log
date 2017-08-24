@@ -6489,3 +6489,17 @@ webdriver_test.setUpClass finished.
 2017-08-24 21:39:50,107 - DEBUG - PhantomJS_.convert_png_to_pdf start
 2017-08-24 21:39:50,108 - DEBUG - filename: click_vendor3.html
 2017-08-24 21:39:50,109 - DEBUG - pdf_out: click_vendor3.pdf
+2017-08-24 22:06:53,822 - DEBUG - return normal logger
+ logfile[../../var/log/log]
+ rotate_log_size[1073741824]
+ id[140167218265952]
+2017-08-24 22:06:53,824 - DEBUG - PhantomJS_.__init__ start
+2017-08-24 22:06:53,841 - DEBUG - PhantomJS_.super().__init__ start
+2017-08-24 22:06:54,867 - INFO - 
+
+webdriver_test.setUpClass finished.
+---------- start ---------
+2017-08-24 22:06:54,867 - DEBUG - PhantomJS_.convert_png_to_pdf start
+2017-08-24 22:06:54,867 - DEBUG - filename: click_vendor2.png
+2017-08-24 22:06:54,868 - DEBUG - pdf_out: click_vendor2.pdf
+2017-08-24 22:06:55,175 - DEBUG - PhantomJS_.convert_png_to_pdf finished
