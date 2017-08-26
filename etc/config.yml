@@ -5,6 +5,7 @@ target_stores:
 - "TSUKUMO"
 vendor_page_wait_time: 54 
 
+product_log_dir: <%= ENV['HOME'] %>/log/kakaku/
 pdf_save_path: <%= ENV['HOME'] %>/data/kakaku/
 
 exec_env: "normal"
