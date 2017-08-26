@@ -15,11 +15,6 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from http.client import RemoteDisconnected
 from urllib.request import URLError
 
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.cidfonts import UnicodeCIDFont
-from reportlab.lib.units import cm
-
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../lib/utils")
 from conf import Conf
 from log import Log
@@ -282,7 +277,9 @@ class PhantomJS_(webdriver.PhantomJS):
 		elif suffix==".png":
 			self.save_screenshot(filename)
 		elif suffix == ".pdf":
-			self.save_screenshot(filename)
+			pngname = os.path.splitext(filename)[0] + ".png"
+			self.save_screenshot(pngname)
+			self.convert_png_to_pdf(pngname)
 		else:
 			self.log.error(__class__.__name__ + "." + sys._getframe().f_code.co_name)
 			self.log.error("TYPEERROR suffix[" + suffix + "]")
@@ -296,7 +293,7 @@ class PhantomJS_(webdriver.PhantomJS):
 		basename = os.path.splitext(filename)[0]
 		pdfname = basename + '.pdf'
 		self.log.debug("pdfname: " + pdfname)
-		command = "convert " + filename + " " + pdfname + " > /dev/null 2>&1"
+		command = "convert \"" + filename + "\" \"" + pdfname + "\" > /dev/null 2>&1"
 		self.log.debug(command)
 		try:
 			self.log.debug(os.system(command))
@@ -312,5 +309,5 @@ class PhantomJS_(webdriver.PhantomJS):
 		if by == "" or tag == "":
 			self.log.debug("by == \"\" or tag == \"\". return False")
 			return True
-		self.log.debug("valid. return True")
+		self.log.debug("by and tag are valid. return True")
 		return False

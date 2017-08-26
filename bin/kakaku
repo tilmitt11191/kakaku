@@ -1,0 +1,4 @@
+
+lib_dir=`readlink -f $0`
+cd `dirname $lib_dir`/../tests/workspace/
+python ../../bin/get_cheapest_pdf.py "$@"
