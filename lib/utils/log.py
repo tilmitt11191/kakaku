@@ -18,17 +18,16 @@ class Log:
 
 	@classmethod
 	def getNormalLogger(cls, logfile="", conffile=""):
-		logger = logging.getLogger()
-		if logger.hasHandlers(): # called before and already created.
+		if logfile == "":
+			logfile = Conf.getconf("logdir", conffile=conffile) + Conf.getconf("logfile", conffile=conffile)
+
+		logger = logging.getLogger(logfile)
+		if len(logger.handlers) > 1: # called before and already created.
 			return logger
 
-		if(logfile==""):
-			logfile = Conf.getconf("logdir", conffile=conffile) + Conf.getconf("logfile", conffile=conffile)
 		loglevel = Conf.getconf("loglevel", conffile=conffile)
 		rotate_log_size = Conf.getconf("rotate_log_size")
 		if len(logger.handlers) < 1:
-			#fh = logging.FileHandler(filename="../../var/log/log2")
-			#logger.addHandler(fh)
 			rfh = logging.handlers.RotatingFileHandler(
 				filename=logfile,
 				maxBytes=rotate_log_size, 
@@ -38,12 +37,12 @@ class Log:
 			rfh.setFormatter(formatter)
 			logger.addHandler(rfh)
 
-			stream_handler = logging.StreamHandler()
-			stream_handler.setFormatter(formatter)
-			stream_handler.setLevel(\
-				Conf.getconf("loglevel_to_stdout", conffile=conffile)\
-				)
-			logger.addHandler(stream_handler)
+			if Conf.getconf("loglevel_to_stdout", conffile=conffile):
+				stream_handler = logging.StreamHandler()
+				stream_handler.setFormatter(formatter)
+				stream_handler.setLevel(\
+					Conf.getconf("loglevel_to_stdout", conffile=conffile))
+				logger.addHandler(stream_handler)
 
 		id_ = id(logger)
 		logger.setLevel(eval("logging."+loglevel))

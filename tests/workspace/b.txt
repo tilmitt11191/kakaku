@@ -1,0 +1,21 @@
+logfile: 
+getNormalLogger logfile: 
+id[139681572951208]
+handlers: []
+logfile: 
+getNormalLogger logfile: 
+id[139681572951208]
+handlers: [<logging.handlers.RotatingFileHandler object at 0x7f0a24135668>, <logging.StreamHandler object at 0x7f0a263fc860>]
+called before and already created.
+logfile: 
+getNormalLogger logfile: 
+id[139681572951208]
+handlers: [<logging.handlers.RotatingFileHandler object at 0x7f0a24135668>, <logging.StreamHandler object at 0x7f0a263fc860>]
+called before and already created.
+products: ['Core i9 7900X']
+logfile: /media/sf_f/program/kakaku/tests/workspace/../../var/log/20170827_053009_Core_i9_7900X.log
+getNormalLogger logfile: /media/sf_f/program/kakaku/tests/workspace/../../var/log/20170827_053009_Core_i9_7900X.log
+id[139681526755512]
+handlers: []
+log change
+product: Core_i9_7900X, save log to: /media/sf_f/program/kakaku/tests/workspace/../../var/log/20170827_053009_Core_i9_7900X.log

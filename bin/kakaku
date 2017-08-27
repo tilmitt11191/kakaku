@@ -1,4 +1,60 @@
+#!/bin/bash
+export LANG=C
+bin_file=`readlink -f $0`
+source `dirname $bin_file`/../lib/utils/getconf.sh
+
+VERSION="1.0"
+
+# オプション解析
+for OPT in "$@"
+do
+	case "$OPT" in
+		'--version' )
+			echo $VERSION
+			exit 1
+			;;
+		'-t'|'--text' )
+			TEXT_FLAG=1
+			if [[ -z "$2" ]] || [[ "$2" =~ ^-+ ]]; then
+				echo "$PROGNAME:「$1」オプションには引数が必要です" 1>&2
+				exit 1
+			fi
+			ARG_TEXT="$2"
+			shift 2
+			;;
+		-*)
+			echo "$PROGNAME: 「$(echo $1 | sed 's/^-*//')」オプションは存在しません。」"
+			exit 1
+			;;
+		*)
+			# コマンド引数（オプション以外のパラメータ）
+			if [[ ! -z "$1" ]] && [[ ! "$1" =~ ^-+ ]]; then
+				params+=( "$1" )
+				shift 1
+			fi
+			;;
+	esac
+done
+
+if [ ! -z $TEXT_FLAG ]; then
+	inputfile_dir=`getconf "inputfile_dir"`
+	products=`cat "$inputfile_dir/$ARG_TEXT"`
+else
+	products="$params"
+fi
+# エスケープ
+products=${products//\*\|\"/\\\*/}
+# 空白だけ、コメントだけの行を削除
+products=`echo -e "$products" | sed -e "/^$\|^#\|^\s*#\|^\s*$/d"`
+# コメントを削除
+products=`echo -e "$products" | sed -e "s/#.*$/""/"`
+# 行頭、行末にダブルクオーテーションを追加
+products=`echo -e "$products" | sed -e 's/^/\"'/ -e 's/$/\"/'`
+# 改行をスペースに置換
+products=`echo $products | sed -e ':loop; N; $!b loop; s/\n/ /g'`
+
+echo $products
 
 lib_dir=`readlink -f $0`
 cd `dirname $lib_dir`/../tests/workspace/
-python ../../bin/get_cheapest_pdf.py "$@"
+eval "python ../../bin/get_cheapest_pdf.py $products" 

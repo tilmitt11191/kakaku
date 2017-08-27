@@ -3,9 +3,11 @@ kakaku_top_page: "http://kakaku.com/"
 target_stores:
 - "ソフマップ.com"
 - "TSUKUMO"
+- "Amazon.co.jp"
 vendor_page_wait_time: 54 
 
 product_log_dir: <%= ENV['HOME'] %>/log/kakaku/
+inputfile_dir: <%= ENV['HOME'] %>/data/kakaku/input
 pdf_save_path: <%= ENV['HOME'] %>/data/kakaku/
 
 exec_env: "normal"
@@ -14,13 +16,14 @@ logdir: ../../var/log/
 logfile: tmp_log
 phantomjs_logfile: phantomjs_log
 loglevel: DEBUG
-loglevel_to_stdout: WARNING
+loglevel_to_stdout: ERROR
 rotate_log_size: 1073741824 #1024*1024*1024 Byte
 rotate_log_lines: 100000
 backup_log_count: 100
 
 phantomJS_pass: "/usr/local/bin/phantomjs"
-phantomJS_wait_time_per_get: 0
-phantomJS_load_timeout: 5
-wait_time_per_retry: 0
+phantomJS_wait_time_per_get: 1
+phantomJS_load_timeout: 3
+phantomJS_wait_time_per_retry: 1
+phantomJS_retry_times: 1
 max_filename_length: 200

@@ -15,19 +15,21 @@ from phantomjs_ import PhantomJS_
 
 class Kakaku:
 	def __init__(self):
-		self.conf = Conf()
 		self.log = Log.getLogger()
 		self.driver = self.create_driver()
-		self.top_url = self.conf.getconf("kakaku_top_page")
-		self.target_stores = self.conf.getconf("target_stores")
+		self.top_url = Conf.getconf("kakaku_top_page")
+		self.target_stores = Conf.getconf("target_stores")
 		self.extract_store_name = re.compile(r"\'")
+		self.warning_messages=False
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start")
 
-	def save_cheapest_pdf(self, product_name, logger=""):
+	def save_cheapest_pdf(self, product_name, logger=None):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start.")
 		self.log.debug("product_name[" + product_name + "]")
-		if logger != "":
+		if logger:
+			self.log.debug("change logger")
 			self.log = logger
+			self.driver.log = logger
 		
 		print("move to kakaku.com")
 		self.move_to_top_page()
@@ -39,15 +41,16 @@ class Kakaku:
 			self.log.warn("use only first result.")
 
 		print("click top of search result")
-		if not self.driver.click(search_results[0]):
+		if not self.driver.click(search_results[0], warning_messages=self.warning_messages):
 			self.log.error("click failed. Please retry.")
-			exit(1)
+			#exit(1)
+			raise Exception
 		#tag = '//td[@class="fRed"]/p[@class="wordwrapTrs"]/a'
 		tag = '//p[@class="wordwrapShop"]/a'
 		self.driver.wait_appearance_of_tag(by="xpath", tag=tag)
 
 		print("get cheapest vendor")
-		cheapest_vendor, vendor_name = self.get_cheapest_vendor_button()
+		cheapest_vendor, vendor_name = self.get_cheapest_vendor_button(product_name)
 
 		print("move_to_vendor_page")
 		self.move_to_vendor_page(cheapest_vendor)
@@ -57,10 +60,10 @@ class Kakaku:
 		
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished.")
 
-	def move_to_top_page(self, timeout=30, warning_messages=False):
+	def move_to_top_page(self, timeout=30):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start.")
 		tag = '//input[@type="text" and @class="c-box-search_text-1_input p-topSerach_input"]'
-		self.driver.get(self.top_url, tag_to_wait=tag, warning_messages=warning_messages)
+		self.driver.get(self.top_url, tag_to_wait=tag, warning_messages=self.warning_messages)
 		#self.driver.get(self.top_url)
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished.")
 
@@ -70,7 +73,8 @@ class Kakaku:
 		input_form = self.driver.find_element_with_handling_exceptions(tag=tag)
 		if input_form == None:
 			self.log.warning("input_form not found. Please retly!")
-			exit(1)
+			#exit(1)
+			raise Exception
 		input_form.send_keys(product_name)
 
 		tag = '//span[@class="p-topSerach_submit"]/input[@id="main_search_button" and @name="search" and @type="submit"]'
@@ -78,15 +82,22 @@ class Kakaku:
 		self.log.debug("self.driver.click(submit_button)")
 		if not self.driver.click(submit_button):
 			self.log.error("click failed. Please retry.")
-			exit(1)
+			#exit(1)
+			raise Exception
 
 		tag = '//a[@class="selfLink"]'
-		self.driver.wait_appearance_of_tag(by="xpath", tag=tag)
-		search_results = self.driver.find_elements_with_handling_exceptions(tag=tag)
+		if self.driver.wait_appearance_of_tag(by="xpath", tag=tag):
+			self.log.debug("tag: " + tag + " hit.")
+			search_results = self.driver.find_elements_with_handling_exceptions(tag=tag)
+		else:
+			self.log.debug("tag: " + tag + " not hit.")
+			tag = '//div[@class="slideItemCard"]'
+			self.log.debug("try tag: " + tag)
+			search_results = self.driver.find_elements_with_handling_exceptions(tag=tag)
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " finished.")
 		return search_results
 
-	def get_cheapest_vendor_button(self):
+	def get_cheapest_vendor_button(self, product_name):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start.")
 		tag = '//p[@class="wordwrapShop"]/a'
 		vendor_elements = self.driver.find_elements_with_handling_exceptions(tag=tag)
@@ -104,7 +115,8 @@ class Kakaku:
 			self.log.error("Probably invalid tag. please check kakaku.py")
 		if len(vendor_elements) == 0:
 			self.log.error("num of vendor == 0. Please retry!")
-			exit(0)
+			#exit(0)
+			raise Exception
 		vendors = [vendor_element.text for vendor_element in vendor_elements]
 		self.log.debug("vendor list: " + str(vendors))
 		vendor_id = 0
@@ -116,16 +128,17 @@ class Kakaku:
 		else:
 			self.log.error("No vendor of product_name[" + str(product_name) + "].")
 			self.log.error("Vendor list: " + str(self.target_stores))
-			exit(0)
+			#exit(0)
+			raise Exception
 		self.log.debug(__class__.__name__ + "." +
 					sys._getframe().f_code.co_name + " finished. return vendor_id[ " + str(vendor_id) + "]")
 		return button_elements[vendor_id], vendors[vendor_id]
 
-	def move_to_vendor_page(self, vendor_button, warning_messages=False):
+	def move_to_vendor_page(self, vendor_button):
 		self.log.debug(__class__.__name__ + "." + sys._getframe().f_code.co_name + " start.")
-		self.driver.get(vendor_button.get_attribute("href"), warning_messages=warning_messages)
+		self.driver.get(vendor_button.get_attribute("href"), warning_messages=self.warning_messages)
 		self.log.debug("wait start")
-		for sec in range(self.conf.getconf("phantomJS_load_timeout")):
+		for sec in range(Conf.getconf("phantomJS_load_timeout")):
 			self.log.debug("wait redirect " + str(sec) + "[sec]")
 			if self.driver.title:
 				self.log.debug("move to shop page finished. page title: " + self.driver.title)
